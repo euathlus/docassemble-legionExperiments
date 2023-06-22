@@ -1,0 +1,15 @@
+---
+mandatory: True
+question: What three numbers would you like to add?
+fields:
+ - First: num1
+ - Second: num2
+ - Third: num3
+---
+mandatory: True
+question: Your numbers are ${ num1 }, ${ num2 }, and ${ num3 }. Your document computing their product is now ready.
+attachment:
+ name: A letter describing the addition of three numbers
+ filename: test-jinja-function-import-result
+ docx template file: test-jinja-import-template.docx 
+---

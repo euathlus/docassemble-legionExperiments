@@ -1,0 +1,13 @@
+---
+mandatory: True
+question: What number would you like to increment?
+fields:
+ - Number: number
+---
+mandatory: True
+question: Your document is now ready.
+attachment:
+ name: Test of Jinja custom increment function
+ filename: test-jinja-function-import-increment
+ docx template file: test-jinja-import-template-increment.docx 
+---

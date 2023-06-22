@@ -1,0 +1,20 @@
+modules:
+ - .add_three_numbers
+---
+code: |
+ sum = add_three_numbers(num1, num2, num3)
+---
+mandatory: True
+question: What three numbers would you like to add?
+fields:
+ - First: num1
+ - Second: num2
+ - Third: num3
+---
+mandatory: True
+question: Your numbers are ${ num1 }, ${ num2 }, and ${ num3 }. Your document is now ready.
+attachment:
+ name: A letter describing the addition of three numbers
+ filename: import_function_add_3
+ docx template file: test-function-import.docx 
+---

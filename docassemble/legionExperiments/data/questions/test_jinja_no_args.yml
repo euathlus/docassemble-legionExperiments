@@ -1,0 +1,7 @@
+---
+mandatory: True
+question: Your document is now ready.
+attachment:
+ name: A letter testing a Jinja custom function with no arguments
+ filename: test-jinja-function-no-args
+ docx template file: template-no-args.docx

@@ -1,0 +1,20 @@
+---
+objects:
+  - firstPerson: Individual
+  - secondPerson: Individual
+---
+generic object: Individual
+question: |
+  What is ${ x.possessive('favorite color') }?
+fields:
+  - Favorite color: x.favorite_color
+---
+mandatory: True
+code: |
+  firstPerson.name.first = 'Ada'
+  secondPerson.name.first = 'Bart'
+---
+mandatory: True
+question: |
+  ${firstPerson.possessive('favorite color')} is ${ firstPerson.favorite_color } and
+  ${secondPerson.possessive('favorite color')} is ${ secondPerson.favorite_color }.

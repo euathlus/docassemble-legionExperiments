@@ -1,0 +1,15 @@
+---
+mandatory: True
+question: What three numbers would you like to add?
+fields:
+ - First: num1
+ - Second: num2
+ - Third: num3
+---
+mandatory: True
+question: Never mind that. Your document is now ready.
+attachment:
+ name: Test of Jinja custom function
+ filename: test-jinja-import-product
+ docx template file: template-test-jinja-import-product.docx 
+---
